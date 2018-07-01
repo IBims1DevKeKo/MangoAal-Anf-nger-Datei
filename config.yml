@@ -1,6 +1,6 @@
 Server-MOTD: 
   Line-1: "&b&l&m-----------[&r&6&l MangoAal &b&l&m]-----------"
-  Line-2: "&4&lMangoAal25260 &eServer1"
+  Line-2: "&4&lMangoAal252660 &eServer1"
 
 JoinGame-MOTD:
   Enabled: true
