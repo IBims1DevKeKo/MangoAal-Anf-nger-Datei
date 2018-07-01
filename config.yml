@@ -1,10 +1,79 @@
-Server-MOTD: 
-  Line-1: "&b&l&m-----------[&r&6&l MangoAal &b&l&m]-----------"
-  Line-2: "&4&lMangoAal252660 &eServer1"
+########################################
+#                                      #
+# Name: Prefix-Core made by OhPercy    #
+# Developer: OhPercy                   #
+# Version: 1.3                         #
+# Compatible Server Version: 1.8-1.8X  # 
+# Current Placeholders: %player%       #
+########################################
 
-JoinGame-MOTD:
-  Enabled: true
-  Messages:
-    - 'Welcome back User'
+##################################################
+# Plugin Displays Links and ip's for the server. #
+##################################################
 
-Max-Players: 20
+#Join/Leave Message section
+join-msg: '&8[&a+&8] &a%player%'
+quit-msg: '&8[&c-&8] &a%player%'
+
+#First Join Prefix & MSG
+first-join-prefix: '&8[&6M&cV&7-&aSystems&8] '
+first-join-msg: '&8Welcome %player%'
+
+#Apply section
+apply-prefix: '&8[&cPrefix&8] &7» '
+apply: '&3www.apply.net'
+
+#Discord section
+discord-prefix: '&8[&cPrefix&8] &7» '
+discord: '&5discord.gg/#4r4fg'
+
+#Twitter section
+twitter-prefix: '&8[&9Twitter&8] &7» '
+twitter: '&fwww.Twitter.com&7/&fMultiVace&7:'
+
+#Tumblr section
+tumblr-prefix: '&8[&cPrefix&8] &7» '
+tumblr: '&3Tumblr'
+
+#Google+ section
+google-prefix: '&8[&cPrefix&8] &7» '
+google: '&3Google'
+
+#Store section
+store-prefix: '&8[&cPrefix&8] &7» '
+store: '&3Store.buycraft.net'
+
+#Youtube section
+youtube-prefix: '&8[&cPrefix&8] &7» '
+youtube: '&1youtube.com/FazeAdapt'
+
+#Teamspeak section
+teamspeak-prefix: '&8[&cPrefix&8] &7» '
+teamspeak: '&dts.poopcraft.net'
+
+#Vote section
+vote-header: '&8&m-------------------'
+vote-prefix: '&8[&6M&7-&cVote&8] &7» '
+vote-message1: '&7MultiVace.net/vote'
+vote-message2: '&4Wartungen'
+vote-message3: '&fDu kannst fuer uns Voten'
+vote-message4: '&fgehe auf einen von &cLinks'
+vote-footer: '&8&m-------------------'
+
+#Forums section
+forums-header: '&8&m-----------------'
+forums-prefix: '&8[&cForums&8] &7» '
+forums-link: '&8Link!'
+forums-footer: '&8&m-----------------'
+
+#Clearchat section
+clearchat-prefix: '&8[&cClearchat&8] &7» '
+clearchat-message: '&cChat has been Cleared!'
+
+#Broadcast section
+specify-message: '&cSpecify a Message!'
+broadcast-prefix: '&8[&cBroadcast&8] &7» '
+
+#Staff Chat section
+prefix: '&8[&cSC&8] &6%player% &9%message% '
+sc-usage: '&8[&cSC&8] &8Usage: &c/sc <msg> '
