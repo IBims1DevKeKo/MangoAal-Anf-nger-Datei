@@ -1,79 +1,76 @@
-########################################
-#                                      #
-# Name: Prefix-Core made by OhPercy    #
-# Developer: OhPercy                   #
-# Version: 1.3                         #
-# Compatible Server Version: 1.8-1.8X  # 
-# Current Placeholders: %player%       #
-########################################
+# %pr% = Lobby Prefix 
+#  %p% = Spielername  
+#  DER DISPLAY IST DER NICK CHAT NUR OHNE : UND %MESSAGE%!!!! 
 
-##################################################
-# Plugin Displays Links and ip's for the server. #
-##################################################
-
-#Join/Leave Message section
-join-msg: '&8[&a+&8] &a%player%'
-quit-msg: '&8[&c-&8] &a%player%'
-
-#First Join Prefix & MSG
-first-join-prefix: '&8[&6M&cV&7-&aSystems&8] '
-first-join-msg: '&8Welcome %player%'
-
-#Apply section
-apply-prefix: '&8[&cPrefix&8] &7» '
-apply: '&3www.apply.net'
-
-#Discord section
-discord-prefix: '&8[&cPrefix&8] &7» '
-discord: '&5discord.gg/#4r4fg'
-
-#Twitter section
-twitter-prefix: '&8[&9Twitter&8] &7» '
-twitter: '&fwww.Twitter.com&7/&fMultiVace&7:'
-
-#Tumblr section
-tumblr-prefix: '&8[&cPrefix&8] &7» '
-tumblr: '&3Tumblr'
-
-#Google+ section
-google-prefix: '&8[&cPrefix&8] &7» '
-google: '&3Google'
-
-#Store section
-store-prefix: '&8[&cPrefix&8] &7» '
-store: '&3Store.buycraft.net'
-
-#Youtube section
-youtube-prefix: '&8[&cPrefix&8] &7» '
-youtube: '&1youtube.com/FazeAdapt'
-
-#Teamspeak section
-teamspeak-prefix: '&8[&cPrefix&8] &7» '
-teamspeak: '&dts.poopcraft.net'
-
-#Vote section
-vote-header: '&8&m-------------------'
-vote-prefix: '&8[&6M&7-&cVote&8] &7» '
-vote-message1: '&7MultiVace.net/vote'
-vote-message2: '&4Wartungen'
-vote-message3: '&fDu kannst fuer uns Voten'
-vote-message4: '&fgehe auf einen von &cLinks'
-vote-footer: '&8&m-------------------'
-
-#Forums section
-forums-header: '&8&m-----------------'
-forums-prefix: '&8[&cForums&8] &7» '
-forums-link: '&8Link!'
-forums-footer: '&8&m-----------------'
-
-#Clearchat section
-clearchat-prefix: '&8[&cClearchat&8] &7» '
-clearchat-message: '&cChat has been Cleared!'
-
-#Broadcast section
-specify-message: '&cSpecify a Message!'
-broadcast-prefix: '&8[&cBroadcast&8] &7» '
-
-#Staff Chat section
-prefix: '&8[&cSC&8] &6%player% &9%message% '
-sc-usage: '&8[&cSC&8] &8Usage: &c/sc <msg> '
+Lobby:
+  Prefix: '&7[&4&lMV&7-&aSystem&7]'
+  Silenthub_Server: Silenthub
+  NoPerm: '%pr% &cDu darfst das nicht!'
+  Command:
+    Warp_Message: true
+    Warp: '%pr% &7Du bist nun bei &e%WARP%'
+    FlyOn: '%pr% &7Du kannst nun Fliegen!'
+    FlyOff: '%pr% &7Du kannst nun nicht mehr Fliegen!'
+    GM_Use: '%pr% &cSyntax: &7/gm <0-3>'
+    GM_0: '%pr% &7Dein Gamemode wurde auf &cSurvival &7gesetzt!'
+    GM_1: '%pr% &7Dein Gamemode wurde auf &6Kreativ &7gesetzt!'
+    GM_2: '%pr% &7Dein Gamemode wurde auf &4Adventure &7gesetzt!'
+    GM_3: '%pr% &7Dein Gamemode wurde auf &8Spectator &7gesetzt!'
+    Lobby: '%pr% &4Lobby &eSystem'
+    Lobby_reload: '%pr% &aDie Config wurde Reloaded'
+    ChatClear: '%pr% &7Der Chat wurde von &c%p% &7geleert!'
+    Build_On: '%pr% &aDu bist nun im Build-Mode'
+    Build_Off: '%pr% &cDu bist nun nicht mehr im Build-Mode'
+    TeamSpeak: '%pr% &aUnser TS&8: &6RangerTV&7.&6ddns&7.&6net&7:&69897'
+    YouTube: '%pr% &aDen &5YT &aRang vergeben wir, wenn du 150 &4Abonnenten &ahast!'
+    Info: '%pr% &eNeu! &bLobbySystem'
+    AFK_On: '%pr% Der Spieler &a%p% &7ist nun AFK'
+    AFK_Off: '%pr% Der Spieler &c%p% &7ist nun nicht mehr AFK'
+    Spawn_wurde_nicht_gesetzt: '%pr% &cDer Spawn wurde noch nicht gesetzt!'
+  MOTD: |-
+    &e&lRanger&4TV&8.&cnet &7We are&8:
+    &8in the &b1.8 &d- &b1.12
+  Im_Code: '%pr% &fDieses &4&lFeature &fist in &4&lWartungen'
+Chatformat:
+  Admin: '&4Owner&l&7 : &4&l%player%: &6&f%message%'
+  Dev: '&bDev : %player%: &f%message%'
+  SrMod: '&cSrMod : %player%: &f%message%'
+  Mod: '&cMod : %player%: &f%message%'
+  Sup: '&9Sup : %player%: &f%message%'
+  Youtuber: '&5%player%: &f%message%'
+  Premium+: '&6%player%: &f%message%'
+  Premium: '&6%player%: &f%message%'
+  Spieler: '&8%player%: &f%message%'
+Display:
+  Admin: '&4&lADMIN &7| &4%p%'
+  Dev: '&b%p%'
+  SrMod: '&c%p%'
+  Mod: '&c%p%'
+  Sup: '&9%p%'
+  YouTuber: '&5%p%'
+  Premium+: '&6%p%'
+  Premium: '&6%p%'
+  Spieler: '&8%p%'
+Tablist:
+  Text_Enable: true
+  Header: "&eSERVERNAME.DE %z% f\xfcr eine neue Zeile"
+  Footer: '&6JETZT &6&lPREMIUM &6KAUFEN %z% &7SHOP.SERVERNAME.DE'
+  Admin: '&4Admin &7| &4%p%'
+  Dev: '&bDev &7| &b%p%'
+  SrMod: '&cSrMod &7| &c%p%'
+  Mod: '&cMod &7| &c%p%'
+  Sup: '&9Sup &7| &9%p%'
+  YouTuber: '&5%p%'
+  Premium+: '&e%p%'
+  Premium: '&6%p%'
+  Spieler: '&8%p%'
+Item:
+  PlayerHider:
+    'On': '%pr% &7Du hast alle &cSpieler &7versteckt'
+    VIP_Only: '%pr% &7Du hast alle &5Spieler &7 VIP''s angezeigt'
+    'Off': '%pr% &7Du hast alle &aSpieler &7angezeigt'
+  Freundes_Command: /spawn
+  LobbyWechsler:
+    Enable: true
+Addon_Nick:
+  ENABLED: true
